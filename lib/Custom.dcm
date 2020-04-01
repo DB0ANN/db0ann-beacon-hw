@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2716
+D UV Erasable EPROM 16 KiBit
+K Erasable OTP EPROM 16KiBit
+F http://ee-classes.usc.edu/ee459/library/datasheets/2716.pdf
+$ENDCMP
+#
+$CMP 27C16
+D OTP EPROM 16 KiBit
+K OTP EPROM 16KiBit
+F http://ee-classes.usc.edu/ee459/library/datasheets/2716.pdf
+$ENDCMP
+#
+$CMP Lantronix_xPort_Pro
+D Lantronix xPort Pro Embedded Device Server
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+#End Doc Library
