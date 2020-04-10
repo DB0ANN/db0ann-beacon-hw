@@ -3,9 +3,9 @@ Micro controler Pinning list
 | Pin | Type    | Port  | Net Name       | 5V Tolerant |
 |-----|---------|-------|----------------|-------------|
 | 1   | Supply  | V_BAT | +3.3V          | n/a         |
-| 2   | n/a     | PC13  | NC             | No          |
-| 3   | In      | PC14  | F_KEY_F        | No          |
-| 4   | Out     | PC15  | CW_GEN         | No          |
+| 2   | I/O     | PC13  | X_IO1          | No          |
+| 3   | I/O     | PC14  | X_IO2          | No          |
+| 4   | I/O     | PC15  | X_IO3          | No          |
 | 5   | In      | PD0   | RCC_OSC_IN     | No          |
 | 6   | Out     | PD1   | RCC_OSC_OUT    | No          |
 | 7   | In      | NRST  | RST            | No          |
@@ -34,7 +34,7 @@ Micro controler Pinning list
 | 27  | Out     | PB1   | SW_H           | No          |
 | 28  | Out     | PB2   | SW_I           | Yes         |
 | 29  | Out     | PB10  | SW_J           | Yes         |
-| 30  | n/a     | PB11  | NC             | Yes         |
+| 30  | In      | PB11  | FRONT_KEY_F    | Yes         |
 | 31  | Supply  | V_SS1 | GND            | n/a         |
 | 32  | Supply  | V_DD1 | +3.3V          | n/a         |
 
@@ -67,7 +67,7 @@ Micro controler Pinning list
 | 54  | In      | PD2   | G              | Yes         |
 | 55  | In      | PB3   | JTAG_TDO_SWO   | Yes         |
 | 56  | In      | PB4   | H              | Yes         |
-| 57  | n/a     | PB5   | NC             | ?           |
+| 57  | Out     | PB5   | CW_GEN         | ?           |
 | 58  | In      | PB6   | I              | Yes         |
 | 59  | In      | PB7   | J              | Yes         |
 | 60  | In      | BOOT0 | Boot           | ?           |
