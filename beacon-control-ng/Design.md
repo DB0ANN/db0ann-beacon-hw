@@ -20,9 +20,11 @@ A LDO is used to generate the 3.3 V Supply out of 5 V.
 | Summ      |          |      296 |                 |
 
 Power dissipation
+```
 P_max = I_max * ( U_in - U_out )
 P_max = 296 mA * ( 5 V - 3.3 V )
 P_max = 457 mW
+```
 
 The LDL1117S33R LDO is used. The LDL1117 variant should be preferred over the
 LD1117 variant, because teh LDL1117 has a quiescent current of only 0.25 mA
@@ -36,9 +38,11 @@ Zener Diode to limit Voltage to 3.3 Volts. Additionally all inputs connected to
 
 Capacitor added for frequency filtering.
 
+```
 f_g = 1 / ( 2 * π * R * C )
 f_g = 1 / ( 2 * π * 1k * 100n )
 f_g = 1.59 kHz
+```
 
 
 ## Analog IO
@@ -51,6 +55,7 @@ V_adc-max = 3.3 V
 Used for OP Voltages, +13,8 V and +5 V.
 
 Schematic:
+```
     V+
     |
    .-.
@@ -66,7 +71,9 @@ Schematic:
    '-'   |       '-'
     |    |        |
    GND  GND      GND
+```
 
+```
 V_adc = V_in * R2 || Ri_ADC / ( R1 + ( R2 || Ri_ADC ) )
 V_adc = V_in * 2k29 / ( 10k + 2k29 )
 V_adc = V_in * 0.186
@@ -74,6 +81,7 @@ V_adc = V_in * 0.186
 V_in-max = V_adc-max / 0.186
 V_in-max = 3.3 V / 0.186
 V_in-max = 17.71 V
+```
 
 
 ### Negative voltages
@@ -81,6 +89,7 @@ V_in-max = 17.71 V
 Used for -10 V.
 
 Schematic:
+```
     Up
     |
    .-.
@@ -96,12 +105,12 @@ Schematic:
    '-'    '-'    |       '-'
     |      |     |        |
     Un    GND   GND      GND
+```
 
 R3 || Ri_ADC can be combined. For better readability in the following equations,
 R3 is used instead of R3 || Ri_ADC.
-Up positive voltage
-Un negative voltage
 
+```
 1: Up = U1 + U3
 2: UP = U1 + U2 + Un
 3: I1 = I2 + I3
@@ -165,6 +174,7 @@ Un = U3 * ------- - Up
 
 => R1 = 10k, R3 = 2k29
 Un = U3 * 6.366 - Up
+```
 
 
 ## CW filter
@@ -174,8 +184,12 @@ TTL input but we will generate only 3.3 V. To compensate this a gain of 1.5 is
 added to the first OP stage.
 
 Target gain
+```
 a = 5 V / 3.3 V = 1.515
-
+```
+Calculated gain
+```
     R1+R2   5k1+10k
 a = ----- = ------- = 1.51
       R2      10k
+```
