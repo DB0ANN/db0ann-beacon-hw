@@ -49,16 +49,7 @@ F1 "Lantronix_xPort_Pro" 100 550 50 H V L CNN
 F2 "Custom:Lantronix_xPort_Pro" 0 25 50 V I C CNN
 F3 "" 0 25 50 V I C CNN
 $FPLIST
- 8P8C*
- RJ31*
- RJ32*
- RJ33*
- RJ34*
- RJ35*
- RJ41*
- RJ45*
- RJ49*
- RJ61*
+ Lantronix_xPort_Pro*
 $ENDFPLIST
 DRAW
 S 550 500 -300 -400 0 1 10 f
