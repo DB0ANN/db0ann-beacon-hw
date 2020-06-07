@@ -2294,7 +2294,7 @@ U 1 1 5EA0F0F0
 P 12600 8300
 F 0 "L1" V 12790 8300 50  0000 C CNN
 F 1 "2H" V 12699 8300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical" H 12600 8300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" H 12600 8300 50  0001 C CNN
 F 3 "~" H 12600 8300 50  0001 C CNN
 	1    12600 8300
 	0    -1   -1   0   
@@ -2484,7 +2484,7 @@ U 1 1 5F6D2409
 P 10900 3250
 F 0 "U1" H 10900 3917 50  0000 C CNN
 F 1 "ULN2003" H 10900 3826 50  0000 C CNN
-F 2 "Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm" H 10950 2700 50  0001 L CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 10950 2700 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 11000 3050 50  0001 C CNN
 	1    10900 3250
 	1    0    0    -1  
@@ -2540,7 +2540,7 @@ U 1 1 5F80AAEB
 P 13650 3250
 F 0 "U2" H 13650 3917 50  0000 C CNN
 F 1 "ULN2003" H 13650 3826 50  0000 C CNN
-F 2 "Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm" H 13700 2700 50  0001 L CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 13700 2700 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 13750 3050 50  0001 C CNN
 	1    13650 3250
 	1    0    0    -1  
@@ -2773,7 +2773,7 @@ F 3 "" H 14700 3750 50  0001 C CNN
 	1    14700 3750
 	1    0    0    -1  
 $EndComp
-Text Label 15200 4350 0    50   ~ 0
+Text Label 15200 3350 0    50   ~ 0
 H_IN
 Wire Wire Line
 	15100 4350 15200 4350
@@ -2803,7 +2803,7 @@ F 3 "" H 11950 4750 50  0001 C CNN
 	1    11950 4750
 	1    0    0    -1  
 $EndComp
-Text Label 15200 3350 0    50   ~ 0
+Text Label 15200 4350 0    50   ~ 0
 I_IN
 Wire Wire Line
 	12350 5350 12450 5350
@@ -3214,15 +3214,15 @@ Wire Wire Line
 	5550 8050 5450 8050
 Wire Wire Line
 	5550 6650 5450 6650
-Text Label 7050 5550 0    50   ~ 0
+Text Label 5450 7250 2    50   ~ 0
 SW_A
-Text Label 7050 5650 0    50   ~ 0
+Text Label 7050 5850 0    50   ~ 0
 SW_B
 Text Label 7050 5750 0    50   ~ 0
 SW_C
-Text Label 7050 5850 0    50   ~ 0
+Text Label 7050 5650 0    50   ~ 0
 SW_D
-Text Label 5450 7250 2    50   ~ 0
+Text Label 7050 5550 0    50   ~ 0
 SW_E
 Text Label 7050 7850 0    50   ~ 0
 SW_F
@@ -3968,7 +3968,7 @@ L Custom:Lantronix_xPort_Pro J3
 U 1 1 5E866BAB
 P 10750 6650
 F 0 "J3" H 10420 6689 50  0000 R CNN
-F 1 "Lantronix_xPort_Pro" H 10420 6598 50  0000 R CNN
+F 1 "XPP1003000-04R" H 10420 6598 50  0000 R CNN
 F 2 "Custom:Lantronix_xPort_Pro" V 10750 6675 50  0001 C CNN
 F 3 "~" V 10750 6675 50  0001 C CNN
 	1    10750 6650
@@ -5106,7 +5106,7 @@ U 1 1 5EE9CC56
 P 9700 9600
 F 0 "J5" H 9750 9817 50  0000 C CNN
 F 1 "Conn_02x02_Odd_Even" H 9750 9726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical" H 9700 9600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" H 9700 9600 50  0001 C CNN
 F 3 "~" H 9700 9600 50  0001 C CNN
 	1    9700 9600
 	1    0    0    -1  
@@ -5117,7 +5117,7 @@ U 1 1 5EEF20EE
 P 10700 9600
 F 0 "J6" H 10750 9817 50  0000 C CNN
 F 1 "Conn_02x02_Odd_Even" H 10750 9726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical" H 10700 9600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" H 10700 9600 50  0001 C CNN
 F 3 "~" H 10700 9600 50  0001 C CNN
 	1    10700 9600
 	1    0    0    -1  
@@ -5128,7 +5128,7 @@ U 1 1 5EF447DD
 P 11700 9600
 F 0 "J7" H 11750 9817 50  0000 C CNN
 F 1 "Conn_02x02_Odd_Even" H 11750 9726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical" H 11700 9600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" H 11700 9600 50  0001 C CNN
 F 3 "~" H 11700 9600 50  0001 C CNN
 	1    11700 9600
 	1    0    0    -1  
@@ -5139,11 +5139,22 @@ U 1 1 5EF97079
 P 12700 9600
 F 0 "J8" H 12750 9817 50  0000 C CNN
 F 1 "Conn_02x02_Odd_Even" H 12750 9726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical" H 12700 9600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" H 12700 9600 50  0001 C CNN
 F 3 "~" H 12700 9600 50  0001 C CNN
 	1    12700 9600
 	1    0    0    -1  
 $EndComp
 Text Notes 12500 7850 0    50   ~ 0
 Add prototyping Area for L1\nArea made out of L1 and J5 - J8
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F1CF5B5
+P 6000 9500
+F 0 "H1" H 6100 9546 50  0000 L CNN
+F 1 "MountingHole" H 6100 9455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6000 9500 50  0001 C CNN
+F 3 "~" H 6000 9500 50  0001 C CNN
+	1    6000 9500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
